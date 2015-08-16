@@ -1,3 +1,4 @@
+# 75% correctness
 def solution(a)
     a.uniq!
     a.sort!
