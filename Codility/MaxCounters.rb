@@ -1,7 +1,8 @@
 def solution(n, a)
   counters = Array.new(n,0)
   #print counters
-  i,maxi = 0
+  maxi = 0
+  i = 0
   while i < a.count
     if a[i] > n
       counters.fill(maxi)
