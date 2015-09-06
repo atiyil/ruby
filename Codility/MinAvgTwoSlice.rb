@@ -1,3 +1,4 @@
+#correctness 80%
 def solution(a)
   i = 2
   index = 0
@@ -13,7 +14,7 @@ def solution(a)
         sliceLen += 1
         sliceAvg = sliceSum.to_f / sliceLen
       end
-      if a[i] < a[i - 2] and (a[i].to_i + a[i-1].to_i).to_f / 2 < sliceAvg
+      if a[i] < a[i - 2] and a[i - 1] < a[i - 2] and (a[i].to_i + a[i-1].to_i).to_f / 2 < sliceAvg
         sliceSum = a[i].to_i + a[i-1].to_i
         sliceLen = 2
         sliceAvg = sliceSum.to_f / sliceLen
@@ -24,6 +25,11 @@ def solution(a)
         sliceLen = 2
         sliceAvg = sliceSum.to_f / sliceLen
         index = i - 1
+    elsif (a[i].to_i + a[i-1].to_i + a[i-2].to_i).to_f / 3 < sliceAvg
+        sliceSum = a[i].to_i + a[i-1].to_i + a[i-2].to_i
+        sliceLen = 3
+        sliceAvg = sliceSum.to_f / sliceLen
+        index = i - 2
     end
     i += 1
   end
