@@ -1,3 +1,4 @@
+#https://codility.com/programmers/lessons/3
 def solution(a)
   if a.count(0) == 0 or a.count(1) == 0
     return 0
