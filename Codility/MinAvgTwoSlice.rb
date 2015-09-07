@@ -31,6 +31,8 @@ def solution(a)
         sliceAvg = sliceSum.to_f / sliceLen
         index = i - 2
     end
+    #print "i:"+i.to_s+" index:"+index.to_s+" sliceSum:"+sliceSum.to_s+" sliceLen:"+sliceLen.to_s
+    #puts
     i += 1
   end
   #puts sliceSum, sliceAvg, average
