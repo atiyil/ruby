@@ -1,4 +1,5 @@
-ef solution(a)
+#https://codility.com/programmers/task/tape_equilibrium
+def solution(a)
     sum1 = a[0] #sum of the first part
     sum2 = 0 #sum of the second part
     index = 1 #array index
