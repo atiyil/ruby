@@ -1,4 +1,5 @@
 https://codility.com/programmers/task/prefix_set
+https://codility.com/programmers/challenges/alpha2010
 def solution(a)
   b = a.uniq
   n = b.size - 1
