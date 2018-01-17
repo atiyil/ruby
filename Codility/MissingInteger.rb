@@ -1,4 +1,4 @@
-# find the smallest positive integer for a given array of integers 'a'
+# find the smallest positive integer missing in a given array of integers 'a'
 # 75% performance
 
 def solution(a)
