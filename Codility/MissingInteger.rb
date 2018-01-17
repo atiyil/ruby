@@ -1,4 +1,6 @@
-# 75% correctness
+# find the smallest positive integer for a given array of integers 'a'
+# 75% performance
+
 def solution(a)
     a.uniq!
     a.sort!
