@@ -1,24 +1,10 @@
 # find the smallest positive integer missing in a given array of integers 'a'
-# 75% performance
 
 def solution(a)
-    a.uniq!
-    a.sort!
-    i = 0
-    counter = 1
-    while i < a.count
-        if a[i] < 1 
-            i += 1
-            next
-        elsif a[i] > counter
-            return counter
-        end
-        i += 1
-        counter += 1
-    end
-    if a.last > 0 and i = a.count
-        return i + 1
-    else 
-        return 1
-    end
+  a.select! {|x| x > 0}
+  counter = Array.new(a.length) {|x| x+1}
+  b = (counter - a).first
+  if b == nil then return (a.length + 1)
+  	else return b
+  	end
 end
