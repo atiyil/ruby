@@ -5,5 +5,5 @@ def convert(num)
     str = str + ((num % 10)+48).chr
     num = num / 10 
   end
-  return str 
+  return str.reverse
 end
